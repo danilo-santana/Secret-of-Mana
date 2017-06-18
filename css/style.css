@@ -113,6 +113,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .characters-header{
 	background-color: transparent;
+    margin: 20px 0px 40px 0px;
+    text-align: center;
 }
 
 .characters-info{
@@ -141,12 +143,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .screenshots-header{
 	background-color: transparent;
+    margin: 20px 0px 40px 0px;
+    text-align: center;
 }
 
 .screenshots-info{
-	width: 200px;
-    height: 200px;
-    border: 2px dashed red;
+	width: 191px;
+    height: 150px;
     padding: 5px;
     background-color: white;
 
@@ -155,6 +158,34 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .screenshots-info img{
 	width: 100%;
     height: 100%;
+    opacity: 1;
+	display: block;
+	transition: .5s ease;
+  	backface-visibility: hidden;
+}
+
+.screenshots-info:hover img{
+	opacity: 0.3;
+}
+
+.middle-eye{
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.icon{
+	 background-color: #4CAF50;
+	 color: white;
+	 font-size: 16px;
+	 padding: 16px 32px;
+}
+.screenshots-info:hover .middle-eye{
+	opacity: 1;
 }
 
  
