@@ -102,10 +102,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .story-section h1{
 	margin: 0px 0px 20px 0px;
+    color: rgb(40,62,83);
+    font-size: 25px;
 }
 
 .story-section img{
-	margin: 6% 0 10px 10%;
+	margin: 6% 10% 27px 0;
     float: left;
     height: 280px;
     width: 280px;
@@ -114,7 +116,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /* -==================== Section Characters ================ */
 .characters-section{
-  	background-color: lightyellow;
+  	background-color: white;
   	padding: 50px;
 }
 
@@ -129,25 +131,40 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .characters-header{
 	background-color: transparent;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0px 35px 0px;
     text-align: left;
 }
 
+.characters-header h1{
+	margin: 0px 0px 15px 0px;
+    color: rgb(40,62,83);
+    font-size: 25px;
+}
+
 .characters-info{
-	width: 210px;
-    height: 170px;
-  	border: 2px dashed red;
+	width: auto;
+    height: 160px;
     background-size: 100%;
     background-repeat: no-repeat;
   	margin-bottom: 20px;
+  	border-radius: 4px;
 }
 
+.class{font-size: 12px!important; padding-top: 0px!important;}
 .randi{ background-image: url(../images/randi.png); background-position: 100% 5%;}
 .primm{ background-image: url(../images/primm.png); background-position: 100% 5%;}
 .popoi{ background-image: url(../images/popoi.jpg); background-position: 100% 15%;}
 
+.characters-wrapper{width: 32%;}
 .characters-wrapper p{
 	text-align: center;
+ 	padding: 10px 0px 10px 0px;
+    font-size: 15px;
+    color: rgb(40,62,83);
+}
+
+.characters-wrapper p:hover{
+	color: rgb(41,192,162);
 }
 
 /* -==================== Section Screenshots ================ */
@@ -173,11 +190,22 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     text-align: center;
 }
 
+.screenshots-header h1{
+	margin: 0px 0px 15px 0px;
+    color: rgb(40,62,83);
+    font-size: 25px;
+}
+
+.screenshots-header p{
+	font-size: 20px;
+    color: #b0b6b8;
+}
+
 .screenshots-info{
 	width: 191px;
-    height: 150px;
+    height: 145px;
     padding: 5px;
-    background-color: white;
+    border-radius: 32px;
 
 }
 
