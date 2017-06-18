@@ -121,4 +121,35 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   	border: 2px dashed red;
 
 }
+
+/* -==================== Section Screenshots ================ */
+
+.screenshots-section{
+  	background-color: #f1f1f1;
+  	padding: 50px;
+}
+
+.container-screenshots{
+	width: 100%;
+    min-height: 250px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.screenshots-header{
+	background-color: transparent;
+}
+
+.screenshots-info{
+	width: 200px;
+    height: 200px;
+    border: 2px dashed red;
+    padding: 5px;
+    background-color: white;
+
+}
+
  
