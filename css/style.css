@@ -5,6 +5,14 @@
 /*RESET*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
 
+/* ==================== Classes gerais ========================= */
+
+.main{
+	max-width: 800px;
+    display: block;
+    margin: 0 auto;
+}
+
 /* ==================== Classes Bootstrap ========================= */
 
 .container{
@@ -53,8 +61,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* -==================== Section About ================ */
 
 .about-game{
-	padding: 80px 50px 80px 50px;
-    border-top: 1px solid #ccc;
+	padding: 40px 50px 40px 50px;
+    background-color: white;
     font-size: 20px;
     line-height: 24px;
 }
@@ -69,23 +77,27 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .about-game p{
 	padding: 0 0 20px;
+	font-size: 15px;
 }
 
 .about-game h1{
 	margin: 0px 0px 20px 0px;
+	color: rgb(40,62,83);
+	font-size: 25px;
 }
 
 /* -==================== Section Story ================ */
 
 .story-section{
-	padding: 80px 50px 80px 50px;
-    border-top: 1px solid #ccc;
+	padding: 40px 50px 40px 50px;
+    background-color: rgb(236,237,239);
     font-size: 20px;
     line-height: 24px;
 }
 
 .story-section p{
 	padding: 0 0 20px;
+	font-size: 15px;
 }
 
 .story-section h1{
@@ -234,7 +246,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* -==================== Section Buy Now ================ */
 
 .buygame-section{
-    padding: 200px 50px 200px 50px;
+    padding: 150px 50px 150px 50px;
     display: flex;
   	justify-content: center;
   	align-items: center;
@@ -268,25 +280,34 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	text-align: center;
 }
 
-.txtalign{
-	z-index: 10;
-    line-height: 25px;
+.wrapper-buygame h2{
+	font-size: 35px;
+}
+
+.wrapper-buygame h2:nth-child(1){
+	margin-bottom: 20px;
 }
 
 .wrapper-buygame h2:nth-child(2){
-	margin-bottom: 25px;
+	margin-bottom: 10px;
+}
+
+.txtalign{
+	z-index: 10;
+    line-height: 25px;
 }
 
 .btn-buy{
 	background-color: rgb(255,88,7);
     border: none;
     color: white;
+    font-weight: 600;
     padding: 7px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 25px 0px 25px 0px;
     cursor: pointer;
     border-radius: 3px;
 }
