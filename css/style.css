@@ -97,19 +97,27 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 /* -==================== Section Characters ================ */
-
 .characters-section{
-	width: 100%;
-	height: 400px;
-	background-color: blue;
-	display: flex;
-	justify-content: space-between;
-	background-color: lightyellow;
+  	background-color: lightyellow;
+  	padding: 50px;
 }
 
-.characters-section div{
-	width: 100px;
-  	height: 100px;
+.container-characters{
+	width: 100%;
+    height: 250px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.characters-header{
+	background-color: transparent;
+}
+
+.characters-info{
+	width: 200px;
+  	height: 200px;
   	border: 2px dashed red;
 
 }
