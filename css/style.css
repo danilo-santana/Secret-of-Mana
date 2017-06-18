@@ -60,10 +60,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .about-game img{
-    margin: 6% 0 10px 15%;
+    margin: 6% 0 10px 10%;
     float: right;
-    height: 250px;
-    width: 250px;
+    height: 280px;
+    width: 280px;
     border-radius: 50%;
 }
 
@@ -71,26 +71,32 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	padding: 0 0 20px;
 }
 
+.about-game h1{
+	margin: 0px 0px 20px 0px;
+}
+
 /* -==================== Section Story ================ */
 
-.story-game{
-	width: 100%;
-	height: 500px;
-	background-color: #fff;
-	display: flex;
-  	justify-content: center;
-  	align-items: center;
+.story-section{
+	padding: 80px 50px 80px 50px;
+    border-top: 1px solid #ccc;
+    font-size: 20px;
+    line-height: 24px;
 }
 
-.content-story{
-	height: 350px;
-    background-color: red;
+.story-section p{
+	padding: 0 0 20px;
 }
 
-.content-story img{
-	height: 250px;
-    /* height: auto; */
-    width: 250px;
+.story-section h1{
+	margin: 0px 0px 20px 0px;
+}
+
+.story-section img{
+	margin: 6% 0 10px 10%;
+    float: left;
+    height: 280px;
+    width: 280px;
     border-radius: 50%;
 }
 
