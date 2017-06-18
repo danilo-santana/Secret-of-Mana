@@ -118,14 +118,24 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .characters-header{
 	background-color: transparent;
     margin: 20px 0px 40px 0px;
-    text-align: center;
+    text-align: left;
 }
 
 .characters-info{
-	width: 200px;
-  	height: 200px;
+	width: 210px;
+    height: 170px;
   	border: 2px dashed red;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  
+}
 
+.randi{ background-image: url(../images/randi.png); background-position: 100% 5%;}
+.primm{ background-image: url(../images/primm.png); background-position: 100% 5%;}
+.popoi{ background-image: url(../images/popoi.jpg); background-position: 100% 15%;}
+
+.characters-wrapper p{
+	text-align: center;
 }
 
 /* -==================== Section Screenshots ================ */
