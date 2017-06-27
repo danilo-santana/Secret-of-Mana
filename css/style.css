@@ -26,29 +26,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* ==================== Primeira Seção do site ==================== */
 
 .container-geral{
-	width: 100%;
-	height: 600px;
-	background: url('../images/bg-main.jpg') no-repeat center center fixed;
-	background-size: cover;
-	display: flex;
-  	justify-content: center;
-  	align-items: center;
+    width: 100%;
+    height: 600px;
+    background: url(../images/bg-main.jpg) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
 }
 
-.wrapper-info {
-	width: 80%;
-	height: 300px;
-	background-color: red;
-	display: inherit;
-	justify-content: flex-start;
-
-  	padding: 5px;
-}
 
 .main-info{
 	width: 400px;
 	height: 300px;
-	background-color: black;
 	padding: 10px;
 }
 
@@ -155,7 +146,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .primm{ background-image: url(../images/primm.png); background-position: 100% 5%;}
 .popoi{ background-image: url(../images/popoi.jpg); background-position: 100% 15%;}
 
-.characters-wrapper{width: 32%;}
+.characters-wrapper{width: 30%;}
 .characters-wrapper p{
 	text-align: center;
  	padding: 10px 0px 10px 0px;
@@ -238,25 +229,26 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	 font-size: 16px;
 	 padding: 16px 32px;
 }
-.screenshots-info:hover .middle-eye{
-	opacity: 1;
-}
+
+
 
 /* Nessa seção estou configurando o hover para aparecer o icone de Zoom nas screenshots */
 
 .zoom-wrapp {
-	color: #fff;
+    width: 32px;
+    height: auto;
 	text-align: center;
-	position: absolute;
+	position: relative;
 	top: 50%;
 	left: 50%;
+    margin-top: -72%;
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	border-radius: 50%;
-	padding: 20px;
+	padding: 6px;
 	border: 1px solid #fff;
 	line-height: 1;
 	opacity: 0;
@@ -264,7 +256,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .zoom-wrapp:hover{
 	opacity:1;
-    background:rgba(0,0,0,0.5) center no-repeat
+    background:rgba(0,0,0,0.5) center no-repeat;
 }
 
 .zoom-container{
@@ -339,3 +331,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     cursor: pointer;
     border-radius: 3px;
 }
+
+/* ================================================================================ */
+/* ================================================================================ */
+/* ======================= seção responsável pelo footer ========================== */
+/* ================================================================================ */
+/* ================================================================================ */
