@@ -81,9 +81,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-weight: 600;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
+	display: inline-block;
+	cursor: pointer;
 	border-radius: 3px;
 	margin: 3px;
 }
@@ -93,12 +92,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     background-color: transparent;
 	border: 2px solid white;
 	border-radius: 5px;
+	font-size: 16px;	
 }
 
 .btn-buy-home{
-	padding: 13px;
-	background-color: rgb(255,88,7);
-	border-radius: 5px;
+	padding: 13px 20px 12px 20px;
+    background-color: rgb(255,88,7);
+    border-radius: 5px;
+    font-size: 14px;
 }
 
 /* -==================== Section About ================ */
@@ -393,6 +394,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border-radius: 3px;
 }
 
+/* =========================== Footer ===================================*/
+
+.footer{
+	height: 100px;
+	background-color: black;
+}
+
 /* =========================== Media queries =========================== */
 
 @media screen and (max-width: 750px) {
@@ -437,6 +445,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	.screenshots-info{
 		width: 270px;
 		height: 205px;
+	}
+
+	.container-geral{
+		background-position: center;
 	}
 }
 
