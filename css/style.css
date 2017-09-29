@@ -438,6 +438,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 		-webkit-justify-content: center;
 	}
 
+	.wrapper-buygame h2:nth-child(2){
+		line-height: 35px;
+	}
+
 }
 
 @media screen and (max-width: 480px){
@@ -454,6 +458,24 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	.container-geral{
 		background-position: center;
 	}
+
+	.story-section, .about-game{
+		padding: 50px 30px 50px 30px;
+	}
+
+	.about-game img, .story-section img{
+		height: 250px;
+		width: 250px;
+	}
+
+	.container-geral{
+		padding: 11px;
+	}
+
+	.main-info, .main-info picture img{
+		width: 100%;
+	}
+
 }
 
 @media screen and (min-width: 900px){
