@@ -84,7 +84,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .about-game h1{
 	margin: 0px 0px 20px 0px;
 	color: rgb(40,62,83);
-	font-size: 25px;
+	font-size: 1.5em;
 }
 
 /* -==================== Section Story ================ */
@@ -104,7 +104,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .story-section h1{
 	margin: 0px 0px 20px 0px;
     color: rgb(40,62,83);
-    font-size: 25px;
+    font-size: 1.5em;
 }
 
 .story-section img{
@@ -345,4 +345,27 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 25px 0px 25px 0px;
     cursor: pointer;
     border-radius: 3px;
+}
+
+/* =========================== Media queries =========================== */
+
+@media screen and (max-width: 750px) {
+	.about-game h1, .story-section h1{
+		padding-bottom: 30px;
+		padding-top: 30px;
+		text-align: center;
+		margin: 0 auto;
+		float: none;
+		display: block;
+	}
+
+	.about-game img, .story-section img {
+		margin: 0 auto;
+		float: none;
+		height: 280px;
+		width: 280px;
+		border-radius: 50%;
+		display: block;
+	}
+
 }
