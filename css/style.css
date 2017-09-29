@@ -1,5 +1,17 @@
+
 * {
   box-sizing: border-box;
+  font-family: helvetica;
+}
+
+@font-face{
+	font-family: helveticabold;
+	src: url('../font/Helvetica/HelveticaNeue-Bold');
+}
+
+@font-face{
+	font-family: helvetica;
+	src: url('../font/Helvetica/HelveticaNeue-Light.otf');
 }
 
 /*RESET*/
@@ -92,7 +104,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* -==================== Section About ================ */
 
 .about-game{
-	padding: 40px 50px 40px 50px;
+	padding: 50px 50px 50px 50px;
     background-color: white;
     font-size: 20px;
     line-height: 24px;
@@ -120,7 +132,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* -==================== Section Story ================ */
 
 .story-section{
-	padding: 40px 50px 40px 50px;
+	padding: 50px 50px 50px 50px;
     background-color: rgb(236,237,239);
     font-size: 20px;
     line-height: 24px;
@@ -371,7 +383,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border: none;
     color: white;
     font-weight: 600;
-    padding: 7px 32px;
+    padding: 9px 37px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -429,7 +441,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 @media screen and (min-width: 900px){
-	.screenshots-header h1{
+	.screenshots-header h1, .characters-header h1{
 		font-size: 2.5em;
 	}
 }
