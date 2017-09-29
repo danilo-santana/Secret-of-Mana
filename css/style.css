@@ -184,7 +184,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	display: flex;
 	display: -ms-flexbox;
     display: -webkit-flex;
-    justify-content: space-between;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -368,4 +369,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 		display: block;
 	}
 
+}
+
+@media screen and (max-width: 480px){
+	.container-screenshots{
+		justify-content: center;
+		-webkit-justify-content: center;
+	}
 }
