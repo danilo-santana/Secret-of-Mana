@@ -5,12 +5,12 @@
 }
 
 @font-face{
-	font-family: helveticabold;
+	font-family: 'helveticabold';
 	src: url('../font/Helvetica/HelveticaNeue-Bold');
 }
 
 @font-face{
-	font-family: helvetica;
+	font-family: 'helvetica';
 	src: url('../font/Helvetica/HelveticaNeue-Light.otf');
 }
 
