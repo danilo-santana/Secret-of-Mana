@@ -34,7 +34,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     display: -webkit-flex;
     display: flex;
   	align-items: center;
-    padding: 50px;
+	padding: 50px;
+	image-rendering: pixelated;
 }
 
 .wrapper-info {
@@ -42,7 +43,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	background-color: red;
 	display: inherit;
 	justify-content: flex-start;
-
+	-webkit-justify-content: flex-start;
   	padding: 5px;
 }
 
@@ -56,6 +57,36 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	color: white;
 	margin-bottom: 5px;
 	margin-left: 5px;
+	font-size: 17px;
+}
+
+.main-info p:nth-child(3){
+	margin-bottom: 30px;
+}
+
+.btn{
+	color: white;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+	border-radius: 3px;
+	margin: 3px;
+}
+
+.btn-about{
+	padding: 10px 20px 10px 20px;
+    background-color: transparent;
+	border: 2px solid white;
+	border-radius: 5px;
+}
+
+.btn-buy-home{
+	padding: 13px;
+	background-color: rgb(255,88,7);
+	border-radius: 5px;
 }
 
 /* -==================== Section About ================ */
@@ -127,7 +158,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    justify-content: space-between;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
     align-items: center;
 }
 
@@ -152,7 +184,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   	border-radius: 4px;
 }
 
-.class{font-size: 12px!important; padding-top: 0px!important;}
+.class{font-size: 14px!important; padding-top: 0px!important;}
 .randi{ background-image: url(../images/randi.png); background-position: 100% 5%;}
 .primm{ background-image: url(../images/primm.png); background-position: 100% 5%;}
 .popoi{ background-image: url(../images/popoi.jpg); background-position: 100% 15%;}
@@ -161,7 +193,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .characters-wrapper p{
 	text-align: center;
  	padding: 10px 0px 10px 0px;
-    font-size: 15px;
+    font-size: 20px;
     color: rgb(40,62,83);
 }
 
@@ -220,7 +252,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     opacity: 1;
 	display: block;
 	transition: .5s ease;
-  	backface-visibility: hidden;
+	image-rendering: pixelated;
 }
 
 .screenshots-info:hover img{
@@ -284,7 +316,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-  	justify-content: center;
+	  justify-content: center;
+	  -webkit-justify-content: center;
   	align-items: center;
   	position: relative;
     background: black;
@@ -376,11 +409,21 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 		display: block;
 	}
 
+	.container-geral{
+		justify-content: center;
+		-webkit-justify-content: center;
+	}
+
 }
 
 @media screen and (max-width: 480px){
 	.container-screenshots{
 		justify-content: center;
 		-webkit-justify-content: center;
+	}
+
+	.screenshots-info{
+		width: 270px;
+		height: 205px;
 	}
 }
