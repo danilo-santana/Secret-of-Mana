@@ -1,17 +1,17 @@
 
-* {
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: helvetica;
 }
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
 
-@font-face{
-	font-family: 'helveticabold';
-	src: url('../font/Helvetica/HelveticaNeue-Bold');
-}
-
-@font-face{
-	font-family: 'helvetica';
-	src: url('../font/Helvetica/HelveticaNeue-Light.otf');
+p, h1, h2, h3, h3, a{
+	font-family: 'Open Sans', sans-serif;
 }
 
 /*RESET*/
@@ -19,11 +19,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /* ==================== Classes gerais ========================= */
 
-.main{
+.wrapper{
 	max-width: 800px;
     display: block;
     margin: 0 auto;
 }
+
 
 /* ==================== Classes Bootstrap ========================= */
 
@@ -76,7 +77,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	margin-bottom: 30px;
 }
 
-.btn{
+.btn-secondery{
 	color: white;
     font-weight: 600;
     text-align: center;
@@ -85,17 +86,24 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	cursor: pointer;
 	border-radius: 3px;
 	margin: 3px;
-}
 
-.btn-about{
 	padding: 10px 20px 10px 20px;
     background-color: transparent;
 	border: 2px solid white;
 	border-radius: 5px;
-	font-size: 16px;	
+	font-size: 16px;
 }
 
-.btn-buy-home{
+.btn-destaque{
+	color: white;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 3px;
+	margin: 3px;
+
 	padding: 13px 20px 12px 20px;
     background-color: rgb(255,88,7);
     border-radius: 5px;
@@ -188,7 +196,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size: 25px;
 }
 
-.characters-info{
+/*.characters-info{
 	width: auto;
     height: 160px;
     background-size: 100%;
@@ -196,21 +204,28 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   	margin-bottom: 20px;
   	border-radius: 4px;
 }
+*/
+.hero-class{font-size: 14px!important; padding-top: 0px!important;}
 
-.class{font-size: 14px!important; padding-top: 0px!important;}
-.randi{ background-image: url(../images/randi.png); background-position: 100% 5%;}
-.primm{ background-image: url(../images/primm.png); background-position: 100% 5%;}
-.popoi{ background-image: url(../images/popoi.jpg); background-position: 100% 15%;}
+.hero-image{
+	width: 100%;
+    height: 205px;
+    object-fit: cover;
+    object-position: top;
+}
 
 .characters-wrapper{width: 30%;}
 .characters-wrapper p{
+	text-align: center;
+}
+.characters-wrapper h3{
 	text-align: center;
  	padding: 10px 0px 10px 0px;
     font-size: 20px;
     color: rgb(40,62,83);
 }
 
-.characters-wrapper p:hover{
+.characters-wrapper h3:hover{
 	color: rgb(41,192,162);
 }
 
@@ -325,7 +340,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* -==================== Section Buy Now ================ */
 
 .buygame-section{
-    padding: 150px 50px 150px 50px;
+    padding: 125px 50px 125px 50px;
 	display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -360,23 +375,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .wrapper-buygame{
 	text-align: center;
+	z-index: 10;
+    line-height: 25px;
 }
 
 .wrapper-buygame h2{
 	font-size: 35px;
-}
-
-.wrapper-buygame h2:nth-child(1){
-	margin-bottom: 20px;
-}
-
-.wrapper-buygame h2:nth-child(2){
-	margin-bottom: 10px;
-}
-
-.txtalign{
-	z-index: 10;
-    line-height: 25px;
+	line-height: 42px;
 }
 
 .btn-buy{
@@ -474,6 +479,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 	.main-info, .main-info picture img{
 		width: 100%;
+	}
+
+	.characters-section{
+		padding: 0px 25px 55px 25px;
 	}
 
 }
